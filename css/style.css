@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 /* common */
 
 /* fine common */
@@ -12,19 +15,57 @@
 /* nav */
 .navigation-section {
     float: left;
-    width: 200px;
+    width: 250px;
     height: calc(100vh - 100px);
 }
 
 nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 10%;
+    padding-left: 20px;
+    background-color: black;
 }
 
+nav .logo img {
+    width: 160px;
+    height: 100px;
+}
+
+/* research */
  nav .research {
+    position: relative;
     width: 100%;
     height: 15%;
+    background-color: black;
 }
+nav .img-svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0 5px 20px;
+}
+
+ nav .testo-svg {
+    position: absolute;
+    top: 11px;
+    left: 55px; 
+}
+
+nav .research svg {
+    width: 30px;
+    height: 30px;
+}
+
+nav .testo-svg p {
+    color: rgb(113, 113, 113);
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+/* fine research */
+
 
  nav .play-list {
     width: 100%;
@@ -43,9 +84,9 @@ nav .account {
 
 /* main */
 .middle-section {
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     height: calc(100vh - 100px);
-    margin-left: 200px;
+    margin-left: 250px;
 }
 /* fine main */
 
@@ -61,6 +102,12 @@ nav .account {
     .navigation-section {
         width: 60px;
     }
+
+    nav .logo img {
+        display: none;
+    }
+
+
 
     .middle-section {
         width: calc(100% - 60px);
@@ -80,17 +127,7 @@ nav .account {
 
 
 
-/* debug */
-
-
- nav .logo {
-    background-color: rgb(4, 252, 252);
-}
- 
-nav .research {
-    background-color: rgb(35, 206, 206);
-}
- 
+/* debug */ 
 nav .play-list {
     background-color: rgb(50, 119, 119);
 }
