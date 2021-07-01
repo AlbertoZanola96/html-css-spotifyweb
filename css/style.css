@@ -9,6 +9,7 @@ body {
 }
 /* common */
 
+
 /* fine common */
 
 
@@ -35,23 +36,11 @@ nav .logo img {
 }
 
 /* research */
- nav .research {
-    position: relative;
+nav .research {
     width: 100%;
     height: 15%;
     background-color: black;
-}
-nav .img-svg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 5px 0 5px 20px;
-}
-
- nav .testo-svg {
-    position: absolute;
-    top: 11px;
-    left: 55px; 
 }
 
 nav .research svg {
@@ -59,15 +48,29 @@ nav .research svg {
     height: 30px;
 }
 
-nav .testo-svg p {
-    color: rgb(113, 113, 113);
+nav .research div a {
+    text-decoration: none;
     font-weight: 600;
-    padding-bottom: 15px;
+    color: rgb(113, 113, 113);
+    line-height: 34px;
+    vertical-align: middle;
+}
+
+nav .research div .bianco {
+    color: white;
+}
+
+nav .research div a svg {
+    line-height: 34px;
+    vertical-align: middle;
+}
+
+nav .research div a:hover {
+    color: white;
 }
 /* fine research */
 
-
- nav .play-list {
+nav .play-list {
     width: 100%;
     height: 65%;
 }
