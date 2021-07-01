@@ -8,7 +8,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 /* common */
-
+.bianco {
+    color: white;
+}
 
 /* fine common */
 
@@ -43,12 +45,12 @@ nav .research {
     padding: 5px 0 5px 20px;
 }
 
-nav .research svg {
+.research svg {
     width: 30px;
     height: 30px;
 }
 
-nav .research div a {
+.research div a {
     text-decoration: none;
     font-weight: 600;
     color: rgb(113, 113, 113);
@@ -56,32 +58,72 @@ nav .research div a {
     vertical-align: middle;
 }
 
-nav .research div .bianco {
+.research div .bianco {
     color: white;
 }
 
-nav .research div a svg {
+.research div a svg {
     line-height: 34px;
     vertical-align: middle;
 }
 
-nav .research div a:hover {
+.research div a:hover {
     color: white;
 }
 /* fine research */
 
+/* playlist */
 nav .play-list {
     width: 100%;
     height: 65%;
+    background-color: black;
 }
 
+.play-list h3 {
+    padding: 25px 0 10px 20px;
+}
+
+#pulsante {
+    display: inline-block;
+}
+
+#pulsante {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+#pulsante > i {
+    font-size: 20px;
+}
+
+.play-list span {
+    color: rgb(113, 113, 113);
+    font-weight: 600;
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+nav ul > li {
+    color: rgb(113, 113, 113);
+    padding: 10px 0 10px 20px;
+    font-weight: 600; 
+}
+
+.play-list span:hover,
+.play-list ul li:hover {
+    color: white;
+}
+/* fine playlist */
+
+/* account */
 nav .account {
     width: 100%;
     height: 10%;
 }
 
 
-
+/* fine account */
 /* fine nav */
 
 
@@ -131,9 +173,6 @@ nav .account {
 
 
 /* debug */ 
-nav .play-list {
-    background-color: rgb(50, 119, 119);
-}
  
 nav .account {
     background-color: rgb(25, 41, 41);
