@@ -150,7 +150,7 @@ a {
     padding-top: 10px;
 }
 
-.access a i {
+.access a  {
     font-size: 25px;
     padding-right: 10px;
 }
@@ -187,26 +187,54 @@ a {
     background-color: rgb(8, 11, 18);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* fine main */
 
 
 /* footer */
 .play-section {
+    display: flex;
     width: 100%;
     height: 100px;
     background-color: rgb(40, 40, 40);
 }
+
+/* footer left */
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.footer-left #brano {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left #brano p {
+    color: rgb(113, 113, 113);
+    font-weight: 600;
+}
+
+.footer-left #brano :first-child {
+    color: white;
+}
+
+.footer-left #icon-left {
+    padding-left: 50px;
+}
+
+.footer-left #icon-left i {
+    padding-left: 15px;
+    color: rgb(113, 113, 113);
+}
+/* fine footer left */
+
 /* fine footer */
 
 /* @media (max-width: 600px) {
