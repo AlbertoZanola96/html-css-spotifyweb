@@ -20,6 +20,10 @@ body {
 
 
 /* nav */
+nav {
+    background-color: black;
+}
+
 .navigation-section {
     float: left;
     width: 250px;
@@ -203,10 +207,6 @@ nav .account {
         width: 60px;
     }
 
-    nav .logo img {
-        display: none;
-    }
-    
     .middle-section {
         width: calc(100% - 60px);
         margin-left: 60px;
