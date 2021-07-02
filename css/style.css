@@ -16,43 +16,45 @@ body {
     color: rgb(113, 113, 113);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* fine common */
 
 
 /* nav */
-nav {
-    background-color: black;
-}
-
 .navigation-section {
     float: left;
     width: 250px;
     height: calc(100vh - 100px);
 }
 
-nav .logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.nav-top {
     width: 100%;
-    height: 10%;
-    padding-left: 20px;
+    height: calc(100% - 80px);
     background-color: black;
+    overflow-y: hidden;
 }
 
-nav .logo img {
-    width: 160px;
-    height: 100px;
+.nav-top > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+
 }
+
+.nav-top .logo {
+    padding: 20px;
+}
+
+.nav-top .logo > img {
+    width: 70%;
+}
+
 
 /* research */
-nav .research {
-    width: 100%;
-    height: 15%;
-    background-color: black;
-    padding: 5px 0 5px 20px;
-}
-
 .research svg {
     width: 30px;
     height: 30px;
@@ -61,43 +63,25 @@ nav .research {
 .research div a {
     text-decoration: none;
     font-weight: 600;
-    line-height: 34px;
-    vertical-align: middle;
 }
 
-.research div .bianco {
-    color: white;
-}
 
-.research div a svg {
-    line-height: 34px;
-    vertical-align: middle;
-}
-
-.research div a:hover {
-    color: white;
-}
 /* fine research */
 
 /* playlist */
-nav .play-list {
-    width: 100%;
-    height: 65%;
-    background-color: black;
+.nav-top .play-list {
+    padding: 20px;
+    overflow: hidden;
 }
 
 .play-list h3 {
-    padding: 25px 0 10px 20px;
+    padding-bottom: 10px;
 }
 
 #pulsante {
     display: inline-block;
-}
-
-#pulsante {
     width: 50px;
     height: 50px;
-    margin-left: 20px;
 }
 
 #pulsante > i {
@@ -110,27 +94,41 @@ nav .play-list {
     padding-left: 10px;
 }
 
-nav ul > li {
-    padding: 10px 0 10px 20px;
+.nav-top > .play-list > ul {
+    height: 80%;
+    overflow-y: auto;
+}
+
+.nav-top ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 600; 
 }
 
+.nav-top ul li > a {
+    color: rgb(113, 113, 113);
+}
+
 .play-list span:hover,
-.play-list ul li:hover {
+.play-list ul li a:hover {
     color: white;
 }
 /* fine playlist */
 
 /* account */
-nav .account {
+.nav-giu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 100%;
-    height: 10%;
+    height: 80px;
     background-color: black;
 }
 
 .account .app {
     margin: 0 20px;
     padding-bottom: 10px;
+    padding-top: 10px;
     border-bottom: 1px solid rgb(113, 113, 113);
 }
 
@@ -202,7 +200,7 @@ nav .account {
 }
 /* fine footer */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .navigation-section {
         width: 60px;
     }
@@ -211,4 +209,4 @@ nav .account {
         width: calc(100% - 60px);
         margin-left: 60px;
     }
-} 
+}  */
