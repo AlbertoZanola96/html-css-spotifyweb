@@ -187,6 +187,23 @@ a {
     background-color: rgb(8, 11, 18);
 }
 
+.middle-section .upgrade {
+    float: right;
+    width: 250px;
+    height: 40px;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 8px 0;
+    margin-right: 10px;
+    margin-top: 16px;
+
+}
+
+.upgrade > h5 {
+    color: white;
+}
+
 /* fine main */
 
 
@@ -236,6 +253,7 @@ a {
     color: rgb(113, 113, 113);
 }
 /* fine footer left */
+
 
 /* footer center */
 .footer-center {
@@ -333,15 +351,15 @@ a {
     background-color: white;
     border-radius: 3px;
 }
-
-
-
-
-
-
 /* fine footer right */
-
 /* fine footer */
+
+
+
+
+
+
+
 
 /* @media (max-width: 600px) {
     .navigation-section {
