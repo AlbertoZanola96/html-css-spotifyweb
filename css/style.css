@@ -24,6 +24,7 @@ a {
 
 
 /* nav */
+
 .navigation-section {
     float: left;
     width: 250px;
@@ -31,6 +32,9 @@ a {
 }
 
 .nav-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
     height: calc(100% - 80px);
     background-color: black;
@@ -38,9 +42,6 @@ a {
 }
 
 .nav-top > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     padding-left: 20px;
 
 }
@@ -51,6 +52,10 @@ a {
 
 .nav-top .logo > img {
     width: 70%;
+}
+
+.hover-top a:hover {
+    filter: brightness(0) invert(1);
 }
 
 
@@ -159,6 +164,10 @@ a {
 .account i:hover,
 .account span:hover {
     color: white;
+}
+
+.nav-giu .app > a:hover {
+    filter: brightness(0) invert(1);
 }
 /* fine account */
 /* fine nav */
