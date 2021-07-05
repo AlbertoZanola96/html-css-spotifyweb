@@ -198,7 +198,7 @@ a {
     border-radius: 25px;
     padding: 9px 0;
     margin-right: 10px;
-    margin-top: 16px;
+    margin-top: 22px;
 
 }
 
@@ -241,7 +241,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .metal img,
@@ -277,18 +276,67 @@ a {
     font-size: 14px;
 }
 
-#jon-tit {
+.tit {
     margin-top: 50px;
     margin-bottom: 10px;
     margin-left: 20px;
     color: white;
 }
 
-#jon-subtit {
+.subtit {
     color: rgb(113, 113, 113);
     font-weight: 600;
     font-size: 13px;
     margin-left: 20px;
+}
+
+.jon,
+.artisti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+.radar,
+.mix,
+.rey,
+.ludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radar img,
+.mix img {
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.personale {
+    font-weight: 600;
+    color: white;
+    margin-right: 50px;
+}
+
+.rey img,
+.ludo img {
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.finale {
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: white;
+    margin-right: 35px;
 }
 /* fine main */
 
@@ -333,6 +381,8 @@ a {
     padding-left: 15px;
     color: rgb(113, 113, 113);
 }
+
+
 /* fine footer left */
 
 
