@@ -60,6 +60,9 @@ a {
     filter: brightness(0) invert(1);
 }
 
+.logo-2 {
+    display: none;
+}
 
 /* research */
 .research svg {
@@ -148,7 +151,7 @@ a {
 }
 
 .account .access {
-    margin: 0 20px;
+    margin-left: 18px;
     padding-top: 10px;
 }
 
@@ -198,13 +201,17 @@ a {
     text-align: center;
     border-radius: 25px;
     padding: 9px 0;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 22px;
 
 }
 
 .upgrade > h5 {
     color: white;
+}
+
+.upgrade:hover {
+    transform: scale(1.1);
 }
 
 .mid-center {
@@ -220,6 +227,7 @@ a {
     padding: 0 20px;
     color: rgb(113, 113, 113);
 }
+
 
 .primo {
     margin: 30px 0 30px 20px;
@@ -379,9 +387,17 @@ a {
     align-items: center;
 }
 
+.lft-2 > i:hover {
+    color: white;
+}
+
 .lft-1 p:first-of-type {
     font-weight: 600;
     color: white;
+}
+
+.lft-1 p:last-of-type:hover  {
+    text-decoration: underline;
 }
 
 .lft-2 i {
@@ -408,7 +424,7 @@ a {
     flex-direction: column;
 }
 
-.footer-center .icon-center {
+.icon-center {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -416,7 +432,7 @@ a {
 
 .icon-center > a > i {
     color: white;
-    padding: 0 20px;
+    padding: 0 1vw;
 }
 
 .line-center {
@@ -431,6 +447,10 @@ a {
 
 .icon-center .play {
     font-size: 35px;
+}
+
+.icon-center .play:hover {
+    transform: scale(1.2);
 }
 
 .line-1 {
@@ -453,6 +473,11 @@ a {
     background-color: white;
     border-radius: 3px;
 }
+
+.line-2:hover,
+.line-4:hover {
+    background-color: lawngreen;
+}
 /* fine footer center */
 
 
@@ -460,20 +485,20 @@ a {
 .footer-right {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 15%;
     height: 100%;
-    margin-right: 10px;
 }
 
-.footer-right > a > i  {
+.icon-right > a > i {
     color: white;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .footer-right .line-3 {
     position: relative;
-    width: 12vw;
+    width: 7vw;
     height: 5px;
     background-color: rgb(113, 113, 113);
     border-radius: 3px;
@@ -496,13 +521,52 @@ a {
 
 
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .navigation-section {
         width: 60px;
     }
+
+    .logo,
+    .none,
+    .play-list,
+    ul {
+        display: none;
+    }
+    
+    .nav-top > div {
+        padding: 0;
+    }
+
+    .research {
+        margin: 5px auto;
+    }
+
+    .account .app {
+        border: none;
+        margin: none;
+    }
+
+    .logo-2 {
+        display: inline-block;
+        margin: 10px auto;
+        width: 70%;
+    }
+    
+    .access > a > i {
+        margin-left: -5px;
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .app > a > i {
+        font-size: 25px;
+        margin-left: -4px;
+
+    }
+    
 
     .middle-section {
         width: calc(100% - 60px);
         margin-left: 60px;
     }
-}  */
+} 
