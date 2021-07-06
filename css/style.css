@@ -232,12 +232,8 @@ a {
     justify-content: space-around;
     align-items: baseline;
 }
-.metal,
-.stranger,
-.place,
-.split,
-.cure,
-.sinister {
+
+.item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,34 +241,38 @@ a {
     position: relative;
 }
 
-.metal img,
-.stranger img,
-.place img,
-.split img,
-.cure img,
-.sinister img {
+.item img {
     width: 250px;
     height: 250px;
-    padding-bottom: 15px;
 }
 
-.metal p:first-of-type,
-.stranger p:first-of-type,
-.place p:first-of-type,
-.split p:first-of-type,
-.cure p:first-of-type,
-.sinister p:first-of-type {
+.layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.item:hover .layover {
+    display: inline-block;
+}
+
+.item p:first-of-type {
     color: white;
     font-weight: 600;
     padding-bottom: 10px;
+    margin-top: 15px;
 }
 
-.metal p:last-of-type,
-.stranger p:last-of-type,
-.place p:last-of-type,
-.split p:last-of-type,
-.cure p:last-of-type,
-.sinister p:last-of-type {
+.item p:last-of-type {
     color: rgb(113, 113, 113);
     font-weight: 600;
     font-size: 14px;
